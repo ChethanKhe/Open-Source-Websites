@@ -1,20 +1,20 @@
 body
 {
-    background-color: black;
+    background-color: rgb(252, 250, 250);
 }
 /*------------------------------------------------NAVBAR----------------------------------------*/
 .nav
 {
-    background-color: rgba(0, 0, 0, 0.856);
+
+    background-color: rgba(241, 135, 35, 0.856);
     z-index: 9;
-    padding-left: 50px;
-    padding-right:50px;
+    padding-left: 25px;
+    padding-right:25px;
     display:flex;
-    box-shadow: 0px 3px 65px 0px rgba(0, 0, 0, 0.856);
 }
 .nav_top
 {
-    position:fixed;
+    position: fixed;
     top:0;
     right:0;
     left:0;
@@ -32,23 +32,23 @@ body
 }
 .nav_side
 {
-    float:right;
+    float:left;
     width:45%;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 .nav_side a
 {
     text-decoration: none;
-    margin-right: 10px;
-    margin-left:30px;
+    margin-right: 5px;
+    margin-left:5px;
     margin-top: 20px;
     padding-top: 20px;
     padding-left: 15px;
-    color: white;
+    color: rgb(15, 10, 10);
     font-weight: bold;
     font-family: 'Trebuchet MS', sans-serif;
-    font-size: 16px;
-    justify-content: center;
+    font-size: 18px;
+    justify-content: right;
     align-items: center;
     align-content: center;
     text-align: center;
@@ -56,10 +56,9 @@ body
 }
 .nav_side a:hover
 {
-    color: rgb(79, 255, 88);
+    color: rgb(7, 12, 7);
     transition: all 1s ease;
 }
-
 /*------------------------------------------------MAIN----------------------------------------*/
 .main
 {
@@ -67,7 +66,7 @@ body
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     height: 130vh;
 }
 .main .main_content
@@ -79,25 +78,34 @@ body
 }
 .main .main_content h2
 {
-    color: white;
-    font-size: 350%;
+    color: rgb(39, 12, 12);
+    font-size: 300%;
     font-family: 'Trebuchet MS', sans-serif;
     font-weight: bolder;
     text-align: left;
 }
 .main .main_content h2 span
-{
-    font-size:50%;
-    opacity: 0.9;
+{   
+    color: rgb(14, 12, 12);
+    font-size:75%;
+    opacity: 1;
     font-weight: 400;
     line-height: 50px;
 }
-.main .main_content .btn
+.main .main_content h3 
+{   
+    color: rgb(37, 6, 6);
+    font-size:40px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align:justify;
+}
+ .main .main_content .btn
 {
     margin-top:10%;
     text-align: left;
     width:0%;
-}
+} 
 .main .main_content .btn a
 {
     text-decoration: none;
@@ -108,13 +116,13 @@ body
     background-color: rgba(0, 0, 0, 0.856);
     color:white;
     font-family: 'Trebuchet MS', sans-serif; 
-    text-align: center;
+    text-align: right;
     border: 2px solid rgba(0, 0, 0, 0.856);
     transition: 0.5s;
-}
+} 
 .main .main_content .btn a:hover
 {
-    background-color: rgba(255, 255, 255, 0.527);
+    background-color: rgba(97, 5, 5, 0.527);
     color: rgb(37, 0, 19);
     border: none;
     border: 4px solid rgb(37, 0, 19);
@@ -192,7 +200,7 @@ body
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     padding-bottom: 50px;
     height: 100vh;
     font-family: 'Trebuchet MS', sans-serif;
@@ -200,7 +208,7 @@ body
 }
 .product h2
 {
-    font-size: 45px;
+    font-size: 75px;
     text-align: center;
     padding: 20px;
 }
@@ -221,7 +229,7 @@ body
 }
 .product .product_container .item:hover
 {
-    box-shadow:0px 3px 65px 0px rgb(255, 189, 165);
+    box-shadow:0px 3px 65px 0px rgb(5, 5, 5);
 }
 .product .product_container .item .item_img
 {
@@ -257,7 +265,7 @@ body
 /*--------------------------------------------FOOTER----------------------------------------*/
 footer
 {
-    background-color: black;
+    background-color: rgba(247, 191, 88, 0.644);
     padding:50px;
     display: inline-block;
     font-family: 'Trebuchet MS', sans-serif;
@@ -277,7 +285,7 @@ footer .pages p
 {
     padding-top: 5%;
     text-align: left;
-    color:rgba(255, 226, 243, 0.808);
+    color:rgba(5, 3, 5, 0.808);
     width:90%;
     padding-left:12%;
 }
@@ -285,12 +293,12 @@ footer .pages a
 {
     text-decoration: none;
     margin:10px;
-    color: rgba(255, 226, 243, 0.808);
+    color: rgba(12, 10, 11, 0.808);
     font-size: 30px;
 }
 footer .pages a:hover
 {
-    color:white;
+    color:rgb(241, 9, 9);
 }
 footer .doc
 {
@@ -301,7 +309,7 @@ footer .doc
 }
 footer .doc h3
 {
-    color: rgb(255, 226, 243);
+    color: rgb(10, 8, 9);
     font-size: 30px;
     padding: 5px;
     font-weight: bold;
@@ -312,7 +320,7 @@ footer .doc a
     display: block;
     text-decoration: none;
     margin:10px;
-    color: rgba(255, 226, 243, 0.808);
+    color: rgba(250, 7, 7, 0.808);
     font-size: 25px;
 }
 footer .doc a:hover
@@ -327,7 +335,7 @@ footer .social
 }
 footer .social h3
 {
-    color: rgb(255, 226, 243);
+    color: rgb(3, 3, 3);
     font-size: 30px;
     padding: 5px;
     font-weight: bold;
@@ -341,7 +349,7 @@ footer .contact
 }
 footer .contact h3
 {
-    color: rgb(255, 226, 243);
+    color: rgb(247, 9, 9);
     font-size: 30px;
     padding: 5px;
     font-weight: bold;
@@ -351,7 +359,7 @@ footer .social p
 {
     padding-top: 5%;
     text-align: left;
-    color:rgba(255, 226, 243, 0.808);
+    color:rgba(7, 5, 6, 0.808);
     width:90%;
     padding-left:12%;
     font-size: large;
@@ -367,9 +375,9 @@ footer .side_btn a
     font-size: 100%;
     padding: 10px 20px;
     font-weight: bold;
-    color: white;
+    color: rgb(7, 8, 5);
     font-family: 'Trebuchet MS', sans-serif;
-    border: 2px double whitesmoke;
+    border: 2px double rgb(99, 75, 11);
     transition: 0.5s;
 }
 footer .side_btn a:hover
@@ -378,20 +386,21 @@ footer .side_btn a:hover
     color: black;
     font-weight:bolder;
     border: none;
-    border: 4px solid green;
+    border: 4px solid rgb(10, 14, 10);
     transition:0.5s;
 }
 footer .contact
 {
     display: inline-block;
 }
+
 footer .contact a
 {
     display: block;
     font-size: 20px;
     line-height: 38px;
     text-decoration: none;;
-    color:rgba(247, 193, 224, 0.904);
+    color:rgba(10, 9, 10, 0.904);
     margin:10px;
 }
 footer .contact a:hover
@@ -400,7 +409,7 @@ footer .contact a:hover
 }
 footer p
 {
-    color:rgba(247, 178, 217, 0.726);
+    color:rgba(8, 8, 8, 0.726);
     text-align: center;
     font-size: 110%;
 }
@@ -534,3 +543,16 @@ footer p
     line-height: 25px;
 }
 /*--------------------------------------------CATERING---------------------------------------*/
+/*--------------------------------------------Course-----------------------------------------*/
+.course_container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.2%;
+}
+.course_container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

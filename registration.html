@@ -2,6 +2,10 @@
 <html>
 
 <head>
+  <script src = "https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+  <script src = "https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+  <script src="login.js"></script>
+
   <title>User Registration</title>
   <style>
     body {
@@ -91,7 +95,9 @@
         <input type="password" id="password" name="password" placeholder="Enter your password" required>
       </div>
       <div class="form-group">
-        <button type="submit">Register</button>
+        <button  onclick="signUp()" , id="SignUp" , type="submit">Register</button>
+
+        <a href="index.html">Go and Sign In</a>
       </div>
     </form>
   </div>
